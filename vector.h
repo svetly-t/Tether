@@ -53,6 +53,10 @@ struct Vector2D {
         Vector2D div {x / d, y / d};
         return div;
     }
+    Vector2D operator-() const {
+        Vector2D neg { -x, -y };
+        return neg;
+    }
     /**
      * Static functions
      */
